@@ -5,8 +5,6 @@ const FORMSPREE_URL = import.meta.env.VITE_FORMSPREE_URL;
 
 
 const ContactPage = () => {
-  console.log('FORMSPREE_URL:', FORMSPREE_URL);
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
