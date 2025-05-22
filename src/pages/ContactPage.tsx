@@ -92,7 +92,7 @@ const ContactPage = () => {
           <div className="absolute inset-0 opacity-30 bg-grid-pattern"></div>
           <div className="container-custom relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="mb-6">Contact Usdfkajfjaljfjdklfdjfdjkldajfjlf</h1>
+              <h1 className="mb-6">Contact Us</h1>
               <p className="text-xl text-gray-600 mb-6">
                 Have questions about our trade data solutions? Our team is here to help.
               </p>
