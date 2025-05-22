@@ -3,7 +3,10 @@ import { Map, Phone, Mail, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 const FORMSPREE_URL = import.meta.env.VITE_FORMSPREE_URL;
 
+
 const ContactPage = () => {
+  console.log('FORMSPREE_URL:', FORMSPREE_URL);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
