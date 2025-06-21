@@ -4,7 +4,7 @@ import {
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow,
   Paper, TablePagination
 } from '@mui/material';
-import '../assets/style/visitorsPage.css'
+import '../assets/style/VisitorsPage.css'
 
 
 const MuiTable = () => {
