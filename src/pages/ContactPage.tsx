@@ -145,7 +145,7 @@ const ContactPage = () => {
                       <h4 className="font-semibold mb-1">Email</h4>
                       <p className="text-gray-600">
                         <a href="mailto:ajay.ksinfotrade25@gmail.com" className="hover:text-primary-600 transition-colors">
-                          ajay.ksinfotrade25@gmail.com
+                          info@infotradia.com
                         </a>
                       </p>
                     </div>

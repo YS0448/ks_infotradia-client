@@ -4,6 +4,8 @@ import Header from './Header';
 import Footer from './Footer';
 import ScrollToTop from '../ui/ScrollToTop';
 import axios from 'axios';
+import apiCall from '../../services/apiServices';
+
 
 const Layout = () => {
   const location = useLocation();
@@ -21,13 +23,29 @@ const Layout = () => {
     }, 50);
   }, [location.pathname]);
 
+  // useEffect(() => {
+  //   // This runs once when the layout mounts (first page load)
+  //   axios
+  //     .get(`${import.meta.env.VITE_API_BASE_URL}/api/userIP`)
+  //     .then(res => console.log(res.data))
+  //     .catch(err => console.error('IP logging failed', err));
+  // }, []);
+
+  const userIP= async()=>{
+    try{
+      const endpoint = `/api/userIP`;
+      const data = await apiCall({ endpoint});
+      console.log('data:', data);
+    }
+    catch(err){
+      console.log('err:', err);
+    }
+  }
+
   useEffect(() => {
-    // This runs once when the layout mounts (first page load)
-    axios
-      .get(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000'}/api/userIP`)
-      .then(res => console.log(res.data))
-      .catch(err => console.error('IP logging failed', err));
+    userIP()
   }, []);
+
 
   return (
     <div className="flex flex-col min-h-screen">

@@ -7,6 +7,7 @@ import ServicesPage from './pages/ServicesPage';
 import FeaturesPage from './pages/FeaturesPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import VisitorsPage from './pages/VisitorsPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="features" element={<FeaturesPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="visitors" element={<VisitorsPage />} />
       </Route>
     </Routes>
   );
