@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import main_img from '../../assets/media/image/main_img.png'
 
 const HeroSection = () => {
   return (
@@ -43,8 +44,8 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="relative animate-slide-up lg:h-[500px]">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+          <div className="relative animate-slide-up lg:h-[600px] flex justify-center">
+            {/* <div className="absolute top-0 right-0 w-64 h-64 bg-primary-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
             <div className="absolute bottom-24 right-24 w-64 h-64 bg-secondary-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
             
@@ -84,7 +85,8 @@ const HeroSection = () => {
                   <div className="h-10 bg-primary-500 rounded w-1/2 mx-auto"></div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <img src={main_img} alt="" className='rounded-xl h-auto w-auto' />
           </div>
         </div>
       </div>

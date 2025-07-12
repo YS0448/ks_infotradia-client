@@ -123,7 +123,7 @@ const ContactPage = () => {
                     </div>
                   </div> */}
                   
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="mt-1 mr-4 p-2 bg-primary-100 rounded-lg">
                       <Phone className="h-5 w-5 text-primary-600" />
                     </div>
@@ -135,7 +135,7 @@ const ContactPage = () => {
                         </a>
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                   
                   <div className="flex items-start">
                     <div className="mt-1 mr-4 p-2 bg-primary-100 rounded-lg">
@@ -144,7 +144,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className="font-semibold mb-1">Email</h4>
                       <p className="text-gray-600">
-                        <a href="mailto:ajay.ksinfotrade25@gmail.com" className="hover:text-primary-600 transition-colors">
+                        <a href="mailto:info@infotradia.com" className="hover:text-primary-600 transition-colors">
                           info@infotradia.com
                         </a>
                       </p>
@@ -258,7 +258,7 @@ const ContactPage = () => {
                             <option value="General Inquiry">General Inquiry</option>
                             <option value="Product Demo">Product Demo</option>
                             <option value="Custom Reports">Custom Reports</option>
-                            <option value="API Integration">API Integration</option>
+                            {/* <option value="API Integration">API Integration</option> */}
                             <option value="Pricing">Pricing Information</option>
                           </select>
                         </div>

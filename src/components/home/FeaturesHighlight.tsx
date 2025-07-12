@@ -1,5 +1,7 @@
 import { PieChart, LineChart, BarChart4, Layers, Search, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import data_img from '../../assets/media/image/data_img.jpg'
+
 
 const FeaturesHighlight = () => {
   return (
@@ -34,8 +36,8 @@ const FeaturesHighlight = () => {
           </div>
           
           <div className="relative">
-            <div className="relative z-10 bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100">
-              <div className="bg-primary-700 text-white p-4">
+            <div className="relative z-10 bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100 h-[600px]">
+              {/* <div className="bg-primary-700 text-white p-4">
                 <h4 className="font-medium">Trade Analytics Dashboard</h4>
               </div>
               <div className="p-6">
@@ -60,7 +62,10 @@ const FeaturesHighlight = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
+              
+              <img src={data_img} alt="" className='rounded-xl w-auto' />
+
             </div>
             
             {/* Background decorative elements */}

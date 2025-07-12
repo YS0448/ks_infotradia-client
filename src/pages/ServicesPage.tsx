@@ -1,6 +1,8 @@
 import { BarChart2, Database, LineChart, PieChart, Lock, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import main_img2 from '../assets/media/image/data_img.jpg'
+import secure_integration from '../assets/media/image/secure_integration.jpg'
 
 const ServicesPage = () => {
   return (
@@ -51,8 +53,8 @@ const ServicesPage = () => {
                 <button className="btn btn-primary">Learn More</button>
               </div>
               
-              <div className="bg-gray-100 rounded-lg p-8 relative">
-                <div className="absolute -top-4 -left-4 w-32 h-32 bg-primary-100 rounded-lg -z-10"></div>
+              <div className="bg-gray-100 rounded-lg relative h-[600px] shadow-xl overflow-hidden">
+                {/* <div className="absolute -top-4 -left-4 w-32 h-32 bg-primary-100 rounded-lg -z-10"></div>
                 <div className="relative rounded-lg overflow-hidden border border-gray-200 bg-white shadow-lg">
                   <div className="bg-primary-700 text-white p-4">
                     <h4 className="font-medium">Analytics Dashboard</h4>
@@ -79,7 +81,9 @@ const ServicesPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                  <img src={main_img2} alt="" className='rounded-xl h-auto w-auto' />
+
               </div>
             </div>
           </div>
@@ -202,7 +206,7 @@ const ServicesPage = () => {
                 <button className="btn bg-secondary-600 hover:bg-secondary-700 text-white">API Documentation</button>
               </div>
               
-              <div className="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
+              {/* <div className="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold mb-2">Sample API Request</h4>
                   <div className="bg-gray-900 p-4 rounded-lg text-green-400 font-mono text-sm overflow-x-auto">
@@ -243,7 +247,11 @@ Authorization: Bearer YOUR_API_KEY`}
                     </pre>
                   </div>
                 </div>
-              </div>
+              </div> */}
+                            <div className="bg-gray-100 rounded-lg relative h-[600px] shadow-xl overflow-hidden">
+
+                                <img src={secure_integration} alt="" className='rounded-xl h-auto w-auto' />
+                </div>
             </div>
           </div>
         </section>
@@ -262,9 +270,9 @@ Authorization: Bearer YOUR_API_KEY`}
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="card p-6">
                   <div className="flex items-center mb-4">
-                    <div className="mr-4">
+                    {/* <div className="mr-4">
                       <div className="w-12 h-12 bg-gray-200 rounded-full"></div>
-                    </div>
+                    </div> */}
                     <div>
                       <h4 className="font-semibold">{testimonial.name}</h4>
                       <p className="text-gray-600 text-sm">{testimonial.position}</p>

@@ -59,7 +59,7 @@ const ProductsPage = () => {
         </section>
         
         {/* Product Screenshots */}
-        <section className="section bg-gray-50">
+        {/* <section className="section bg-gray-50">
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="mb-4">Platform Interface</h2>
@@ -88,7 +88,7 @@ const ProductsPage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         
         {/* Pricing Plans */}
         <section className="section bg-white">
