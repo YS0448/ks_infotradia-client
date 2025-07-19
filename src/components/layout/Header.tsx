@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, BarChart2 } from 'lucide-react';
+import logo from '../../assets/media/image/ks_infotrade_logo.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,13 +25,14 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white shadow-md ' : 'bg-transparent '
       }`}
     >
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center" onClick={closeMenu}>
-          <BarChart2 className="w-8 h-8 text-primary-600" />
-          <span className="ml-2 text-xl font-bold text-primary-800">KS Infotrade</span>
+          {/* <BarChart2 className="w-8 h-8 text-primary-600" /> */}
+          {/* <span className="ml-2 text-xl font-bold text-primary-800">KS Infotrade</span> */}
+          <img src={logo} alt="" className='h-[100px]' />
         </Link>
 
         {/* Desktop Navigation */}
