@@ -71,14 +71,15 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               Subscribe to our newsletter to receive the latest updates and insights.
             </p>
-            <form className="flex flex-col sm:flex-row gap-2">
+            {/* <form className="flex flex-col sm:flex-row gap-2"> */}
+            <form className="">
               <input
                 type="email"
                 placeholder="Your email"
-                className="px-4 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="px-4 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 me-2"
                 required
               />
-              <button type="submit" className="btn btn-primary whitespace-nowrap">
+              <button type="submit" className="btn btn-primary whitespace-nowrap py-2">
                 Subscribe
               </button>
             </form>

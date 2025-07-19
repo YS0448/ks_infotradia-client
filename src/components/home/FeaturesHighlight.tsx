@@ -69,8 +69,8 @@ const FeaturesHighlight = () => {
             </div>
             
             {/* Background decorative elements */}
-            <div className="absolute -z-10 top-10 -right-10 w-40 h-40 bg-accent-100 rounded-full"></div>
-            <div className="absolute -z-10 -bottom-10 -left-10 w-40 h-40 bg-primary-100 rounded-full"></div>
+            {/* <div className="absolute -z-10 top-10 -right-10 w-40 h-40 bg-accent-100 rounded-full"></div> */}
+            {/* <div className="absolute -z-10 -bottom-10 -left-10 w-40 h-40 bg-primary-100 rounded-full"></div> */}
           </div>
         </div>
       </div>
